@@ -1,0 +1,20 @@
+<div class="head">
+  <div class="header">
+    <a href="#" routerLink="/"><button mat-button>Home</button></a>
+    <div>
+      <button mat-button [matMenuTriggerFor]="menu">Generes</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/action" class="drop">Action</button>
+        <button mat-menu-item routerLink="/realistic" class="drop">
+          Realistic
+        </button>
+        <button mat-menu-item routerLink="/historical" class="drop">
+          Historical
+        </button>
+      </mat-menu>
+    </div>
+    <a href="#" routerLink="/"><button mat-button>Popular</button></a>
+    <a href="#" routerLink="/"><button mat-button>Rating</button></a>
+    <a href="#" routerLink="/"><button mat-button>Contact Us</button></a>
+  </div>
+</div>

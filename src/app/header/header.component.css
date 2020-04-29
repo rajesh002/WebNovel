@@ -1,0 +1,19 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  padding-left: 10em;
+}
+
+.head {
+  background-image: url("./../../assets/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+}
+
+button {
+  font-size: 18px;
+  color: white;
+}
+
+.drop {
+  background: darkgray;
+}

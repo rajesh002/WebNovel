@@ -1,0 +1,17 @@
+<div class="search">
+  <input type="text" placeholder="Search by title.." name="search" id="input" [(ngModel)]="term" />
+</div>
+<ul>
+  <div class="novels">
+    <li *ngFor="let novel of novels| filter:term">
+      <div *ngIf="novel.genres == 'history'">
+        <div class="action">
+          <img src="{{ novel.image }}" alt="" />
+          <h2>{{ novel.title }}</h2>
+          <p>{{ novel.synopsis }}</p>
+          <a href="{{ novel.url }}"><button>Full Story</button></a>
+        </div>
+      </div>
+    </li>
+  </div>
+</ul>

@@ -1,0 +1,45 @@
+li {
+  list-style: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  height: 150px;
+  width: 300px;
+}
+
+.action {
+  border: 2px solid lightgray;
+  background: white;
+  padding: 20px;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+}
+
+button {
+  height: 50px;
+  width: 300px;
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.novels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
+.search {
+  margin-left: 900px;
+}
+
+#input {
+  border: 2px solid grey;
+  font-size: 20px;
+  margin: 5px;
+}
