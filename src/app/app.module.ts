@@ -5,6 +5,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,8 @@ import { RealisticComponent } from './realistic/realistic.component';
 import { HistoricalComponent } from './historical/historical.component';
 import { ActionComponent } from './action/action.component';
 import { SearchComponent } from './search/search.component';
+import { PopularComponent } from './popular/popular.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +31,12 @@ import { SearchComponent } from './search/search.component';
     HistoricalComponent,
     ActionComponent,
     SearchComponent,
+    PopularComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
+    MatCardModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,

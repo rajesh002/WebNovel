@@ -12,8 +12,6 @@ img {
 }
 
 .action {
-  border: 2px solid lightgray;
-  background: white;
   padding: 20px;
   width: 300px;
   height: auto;
@@ -22,7 +20,7 @@ img {
 
 button {
   height: 50px;
-  width: 300px;
+  width: 280px;
   background: black;
   color: white;
   border: 1px solid black;
@@ -33,12 +31,18 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 20px;
 }
+
 .search {
-  margin-left: 900px;
+  margin-left: 1000px;
 }
 
 #input {
-  border: 2px solid grey;
+  border: 2px solid white;
+  border-radius: 10rem;
   font-size: 20px;
   margin: 5px;
+}
+
+.example-card {
+  max-width: 400px;
 }

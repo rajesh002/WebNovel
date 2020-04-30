@@ -1,10 +1,12 @@
 <div class="head">
   <div class="header">
+    <h1>WEB NOVEL</h1>
+    <p></p>
     <a href="#" routerLink="/"><button mat-button>Home</button></a>
     <div>
       <button mat-button [matMenuTriggerFor]="menu">Generes</button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="/action" class="drop">Action</button>
+        <button mat-menu-item routerLink="/action" class="drop" (click)="dataPass('action')">Action</button>
         <button mat-menu-item routerLink="/realistic" class="drop">
           Realistic
         </button>
@@ -13,8 +15,9 @@
         </button>
       </mat-menu>
     </div>
-    <a href="#" routerLink="/"><button mat-button>Popular</button></a>
-    <a href="#" routerLink="/"><button mat-button>Rating</button></a>
+    <a href="#" routerLink="/popular"><button mat-button>Popular</button></a>
+    <a href="#" routerLink="/rating"><button mat-button>Rating</button></a>
     <a href="#" routerLink="/"><button mat-button>Contact Us</button></a>
+    <h1>{{data}}</h1>
   </div>
 </div>

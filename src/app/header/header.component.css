@@ -1,19 +1,33 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 4fr 1fr 1fr 1fr 1fr 1fr;
   padding: 20px;
   padding-left: 10em;
 }
 
 .head {
-  background-image: url("./../../assets/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+  background-image: url("./../../assets/3.jpg");
 }
 
 button {
   font-size: 18px;
   color: white;
+  text-shadow: .1em .1em rgba(0, 0, 0, 0.3);
 }
 
 .drop {
-  background: darkgray;
+  color: white;
+  /* font-weight: bold; */
+  background: rgb(71, 72, 73);
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px #FF0000;
+}
+
+
+.drop:hover {
+  color: black;
 }
