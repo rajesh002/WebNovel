@@ -2,22 +2,21 @@
   <div class="header">
     <h1>WEB NOVEL</h1>
     <p></p>
-    <a href="#" routerLink="/"><button mat-button>Home</button></a>
+    <a href="#" routerLink="/"><button mat-button (click)="dataPass('')">Home</button></a>
     <div>
       <button mat-button [matMenuTriggerFor]="menu">Generes</button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="/action" class="drop" (click)="dataPass('action')">Action</button>
-        <button mat-menu-item routerLink="/realistic" class="drop">
+        <button mat-menu-item routerLink="/novels" class="drop" (click)="dataPass('action')">Action</button>
+        <button mat-menu-item routerLink="/novels" class="drop" (click)="dataPass('Realistic')">
           Realistic
         </button>
-        <button mat-menu-item routerLink="/historical" class="drop">
+        <button mat-menu-item routerLink="/novels" class="drop" (click)="dataPass('history')">
           Historical
         </button>
       </mat-menu>
     </div>
-    <a href="#" routerLink="/popular"><button mat-button>Popular</button></a>
-    <a href="#" routerLink="/rating"><button mat-button>Rating</button></a>
-    <a href="#" routerLink="/"><button mat-button>Contact Us</button></a>
-    <h1>{{data}}</h1>
+    <a href="#" routerLink="/novels"><button mat-button (click)="dataPass('popular')">Popular</button></a>
+    <a href="#" routerLink="/novels"><button mat-button (click)="dataPass('rating')">Rating</button></a>
+    <a href="#" routerLink="/novels"><button mat-button>Contact Us</button></a>
   </div>
 </div>

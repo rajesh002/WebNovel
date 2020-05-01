@@ -4,18 +4,18 @@ import { SelectedItemService } from './../selected-item.service';
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  providers: [SelectedItemService],
+  // providers: [SelectedItemService],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private selected: SelectedItemService) {}
-  data: String;
-  temp: string = 'hai';
-  ngOnInit(): void {
-    this.data = this.selected.data;
+  message: string;
 
-    console.log(this.selected.temp);
+  constructor(private data: SelectedItemService) {}
+
+  ngOnInit() {
+    this.data.currentMessage.subscribe((message) => (this.message = message));
   }
-  dataPass(selectedItem): void {
-    this.selected.temp = selectedItem;
+
+  dataPass(msg: string) {
+    this.data.changeMessage(msg);
   }
 }

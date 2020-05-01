@@ -7,15 +7,17 @@ import { SelectedItemService } from './../selected-item.service';
   selector: 'app-novels',
   templateUrl: './novels.component.html',
   styleUrls: ['./novels.component.css'],
-  providers: [SelectedItemService],
 })
 export class NovelsComponent implements OnInit {
   constructor(private selected: SelectedItemService) {}
-  data: String = this.selected.temp;
+  filter: string;
   novels: novelInterface[];
   action: boolean;
   term: string;
   ngOnInit(): void {
     this.novels = novels;
+    this.selected.currentMessage.subscribe(
+      (message) => (this.filter = message)
+    );
   }
 }

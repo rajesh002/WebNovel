@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { SelectedItemService } from './selected-item.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,12 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NovelsComponent } from './novels/novels.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RealisticComponent } from './realistic/realistic.component';
-import { HistoricalComponent } from './historical/historical.component';
-import { ActionComponent } from './action/action.component';
-import { SearchComponent } from './search/search.component';
-import { PopularComponent } from './popular/popular.component';
-import { RatingComponent } from './rating/rating.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +23,7 @@ import { RatingComponent } from './rating/rating.component';
     HeaderComponent,
     FooterComponent,
     NovelsComponent,
-    RealisticComponent,
-    HistoricalComponent,
-    ActionComponent,
-    SearchComponent,
-    PopularComponent,
-    RatingComponent,
+    ContactusComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +35,7 @@ import { RatingComponent } from './rating/rating.component';
     Ng2SearchPipeModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [SelectedItemService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

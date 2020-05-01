@@ -4,7 +4,7 @@
 <ul>
   <div class="novels">
     <li *ngFor="let novel of novels | filter: term">
-      <div *ngIf="novel.genres == data || data=='' ">
+      <div *ngIf="novel.genres ==filter || filter=='' ">
         <div class="action">
           <mat-card class="example-card">
             <mat-card-header>
