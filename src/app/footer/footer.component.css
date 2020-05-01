@@ -1,0 +1,14 @@
+hr {
+  border: 1px solid black;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+
+.footer {
+  background-color: black;
+}

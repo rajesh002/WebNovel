@@ -57,7 +57,7 @@ export const novels: novelInterface[] = [
     synopsis:
       'A dizziness akin to falling from the sky without a parachute overwhelmed him. His entire body screamed, feeling pain that felt as though his entire body was broken apart. The eyes of his family members becoming ever so distant Upon awakening, the first thing he saw was his little sisters...',
     url: 'https://www.wuxiaworld.com/novel/dungeon-predator/dp-chapter-1',
-    genres: 'action',
+    genres: 'history',
   },
   {
     image: './assets/Action/issth.jpg',
@@ -66,7 +66,7 @@ export const novels: novelInterface[] = [
       'I Shall Seal the Heavens is the story of the young scholar Meng Hao, who gets forcibly recruited into a sect of immortal cultivators. In the cultivation world, the strong prey on the weak, and the law of the jungle prevails. Meng Hao must adapt to survive. Filled with both comedy and drama,..',
     url:
       'https://www.wuxiaworld.com/novel/i-shall-seal-the-heavens/issth-book-1-chapter-1',
-    genres: 'action',
+    genres: 'history',
   },
   {
     image: './assets/history/150.jpg',
@@ -138,7 +138,7 @@ export const novels: novelInterface[] = [
       'On the day when the black moon is full in the sky, she is the only swordmen left enough energy to fight. She took her stand, with the sword in hand she finally jumped. Her tales of sprit remembered long as in blooming decades. She is possible one who can admire her beauty within her heart. Probably she won the game...',
     url:
       'https://www.webnovel.com/book/13002966806371905/34906170514787226/Warriors-of-the-Hilton/Chapter%3A1---Bloodline',
-    genres: 'history',
+    genres: 'Realistic',
   },
   {
     image: './assets/realistic/150.jpg',
