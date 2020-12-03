@@ -1,3 +1,7 @@
+[Here go to see my site](https://beautifulstories.herokuapp.com/)
+
+Novels is a project designed using Angular. This was contain different types of novels and based on user decision it will redirect to different sites for reading of full novel.
+
 # Novels
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
